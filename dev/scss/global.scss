@@ -1,0 +1,44 @@
+$include-fonts: true;
+
+@import "setup/settings";
+@import '../../node_modules/foundation-sites/scss/foundation';
+
+@include foundation-global-styles;
+@include foundation-xy-grid-classes;
+@include foundation-forms;
+@include foundation-button;
+@include foundation-typography;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+@include foundation-sticky;
+@include foundation-flex-classes;
+// @include foundation-reveal;
+// @include foundation-close-button;
+// @include foundation-tooltip;
+
+@import "variables";
+
+.inline{
+    display: inline-block;
+}
+img:not(#Logo){
+    border: 1px solid white;
+    height: 200px;
+    object-fit: cover ;
+    width: 100%;
+}
+#Logo{
+    width : 100px;
+}
+h1{
+    font-size: 1rem;
+    text-align: center;
+    margin: auto 0;
+    padding: 32px;
+    text-transform: full-width;
+}
+@media screen and (max-width: 640px) {
+    img{
+        height: auto;
+    }
+  }
