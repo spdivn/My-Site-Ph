@@ -16,29 +16,5 @@ $include-fonts: true;
 // @include foundation-close-button;
 // @include foundation-tooltip;
 
-@import "variables";
+@import "images";
 
-.inline{
-    display: inline-block;
-}
-img:not(#Logo){
-    border: 1px solid white;
-    height: 200px;
-    object-fit: cover ;
-    width: 100%;
-}
-#Logo{
-    width : 100px;
-}
-h1{
-    font-size: 1rem;
-    text-align: center;
-    margin: auto 0;
-    padding: 32px;
-    text-transform: full-width;
-}
-@media screen and (max-width: 640px) {
-    img{
-        height: auto;
-    }
-  }

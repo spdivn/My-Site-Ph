@@ -1,7 +1,10 @@
 document.addEventListener('DOMContentLoaded', function (params) {
-    var template = (data) => `<div class="cell small-12 medium-6 large-3">
-    <a href="${data}" data-lightbox="roadtrip" >
-    <img src="${data}" alt="Boh">
+    var template = (data) => `<div class="cell small-12 medium-6 large-3 overHidden">
+    <a href="${data}" data-lightbox="roadtrip">
+        <img src="${data}" alt="Boh"> 
+        <a href="${data}">
+            Guarda
+        </a>
     </a>
     </div>`,
         portfolio = document.querySelector('#portfolio');
